@@ -1,1 +1,20 @@
-https://www.khanacademy.org/computer-programming/spin-off-of-project-design-a-store-database/5352552606777344
+### In this Project, I am demonstrating the basics of setting up a database that is "Store Inventory" ###
+
+CREATE TABLE store (id INTEGER PRIMARY KEY, item TEXT, color TEXT, quantity INTEGER, price INTEGER);
+INSERT INTO store VALUES (1, "tshirt", "blue", 12, 13.99);
+INSERT INTO store VALUES (2, "tshirt", "red", 3, 13.99);
+INSERT INTO store VALUES (3, "pants", "grey", 1, 15.00);
+INSERT INTO store VALUES (4, "hat", "green", 7, 5.00);
+INSERT INTO store VALUES (5, "pants", "navy", 45, 31.34);
+INSERT INTO store VALUES (6, "socks", "red plaid", 8, 9.99);
+INSERT INTO store VALUES (7, "hat", "yellow", 21, 8.99);
+INSERT INTO store VALUES (8, "hoodie", "black", 1, 34.88);
+INSERT INTO store VALUES (9, "hoodie", "gray", 4, 34.88);
+INSERT INTO store VALUES (10, "socks", "coral", 3, 9.99);
+INSERT INTO store VALUES (11, "tshirt", "coral", 54, 17.98);
+INSERT INTO store VALUES (12, "hoodie", "navy", 43, 12.99);
+INSERT INTO store VALUES (13, "tshirt", "orange", 67, 3.99);
+INSERT INTO store VALUES (14, "hat", "brown", 20, 1.98);
+INSERT INTO store VALUES (15, "socks", "green plaid", 8, 2.34);
+SELECT * FROM store WHERE price ORDER BY price DESC;
+SELECT SUM(price)FROM(store);
